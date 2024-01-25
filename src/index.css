@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #151D2F;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+   /* Use 100vh to represent 100% of the viewport height */
+  
+}
+#main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#container {
+  background-color: #3F4365;
+  max-width: 50vw;
+  margin-inline: auto;
+  padding: 10px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container h1 {
+  color: #ffffff;
+  font-weight: 700;
+}
+#task-list ul{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 5px;
+  border: solid #EEAA74 2px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+}
+#task-list ul li {
+  list-style-type: none;
+  background-color: #eeb868;
+  padding: 10px;
+  padding-left: 10px;
+  border: solid #d9d9d9 2px;
+  border-left: solid #d9d9d9 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#new-task{
+  border: none;
+  padding: 5px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #7d86b6;
+  color: #fff;
+}
+#new-task::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 1.3ch;
+}
+#btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btns :nth-child(1){
+  padding: 5px 60px;
+  border: none;
+  background-color: rgb(45, 206, 0);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#completed-msg{
+  color: #c6c6c6;
+}
+
+#mark-complete{
+  text-align: center;
+  color: #c6c6c6;
+  
+}
+
+/* ---------------Mobile--------------- */
+
+@media only screen and (max-width: 600px) {
+  #container {
+    max-width: 90vw; /* Adjust the value based on your design for smaller screens */
+    padding: 20px;
+  }
+
+  #mark-complete{
+    font-size: 12px;
+  }
+}
