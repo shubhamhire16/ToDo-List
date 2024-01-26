@@ -37,6 +37,7 @@ function Todo(){
       </div>
       <p id="mark-complete">Click on the tasks that are completed to remove them</p>
       </div>
+      <p>Made by Shubham Hire</p>
     </>
   )
 }
